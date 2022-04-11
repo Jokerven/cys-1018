@@ -1,0 +1,145 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #42525c;
+}
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 10px grey;
+}
+
+.nav-logo {
+  padding-left: 30px;
+}
+
+.nav-menu {
+  display: none;
+  list-style: none;
+  gap: 30px;
+  height: 100vh;
+}
+
+.nav-menu li {
+  margin: 50px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #42525c;
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.hamburger {
+  position: relative;
+  padding-right: 30px;
+}
+
+.hamburger-line {
+  background-color: grey;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.hamburger-line::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  background-color: grey;
+}
+
+.hamburger-line::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  background-color: grey;
+}
+
+.header {
+  font-size: 32px;
+  text-align: center;
+}
+
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-checkbox:checked ~ ul {
+  max-height: 100%;
+  display: block;
+}
+
+section {
+  padding: 50px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px auto;
+  gap: 100px;
+}
+
+.project h1 {
+  font-size: 28px;
+}
+
+.project p {
+  font-size: 20px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    height: auto;
+    margin-right: 30px;
+  }
+
+  .nav-menu li {
+    margin: 0;
+  }
+
+  section {
+    padding: 20px 100px;
+  }
+
+  .project {
+    flex-direction: row;
+  }
+
+  .project h1 {
+    font-size: 28px;
+  }
+
+  .project p {
+    font-size: 20px;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+}
