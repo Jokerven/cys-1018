@@ -33,11 +33,9 @@ nav {
   color: #42525c;
   text-align: center;
 }
-
 .active {
   font-weight: bold;
 }
-
 .hamburger {
   position: relative;
   padding-right: 30px;

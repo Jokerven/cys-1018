@@ -11,7 +11,6 @@ nav {
   align-items: center;
   box-shadow: 0 5px 10px grey;
 }
-
 .nav-logo {
   padding-left: 30px;
 }
@@ -87,7 +86,6 @@ nav {
 section {
   padding: 50px;
 }
-
 .project {
   display: flex;
   flex-direction: column;

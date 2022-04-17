@@ -118,7 +118,6 @@ section {
 .portfolio-button:hover svg {
   stroke: white;
 }
-
 @media (min-width: 768px) {
   .hamburger {
     display: none;
